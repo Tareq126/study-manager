@@ -88,6 +88,13 @@ const Activity = () => {
           </div>
         </h1>
       </div>
+
+      {/* activity completed */}
+      <div className="flex justify-center">
+        <button className="btn btn-success text-3xl font-semibold w-96 h-20 mt-10">
+          Activity Completed
+        </button>
+      </div>
     </div>
   );
 };

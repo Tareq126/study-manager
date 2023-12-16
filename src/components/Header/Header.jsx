@@ -13,7 +13,7 @@ const Header = () => {
             srcset=""
           />
         </div>
-        <div className="text-4xl bold ml-4 text-green-600">Study Manager</div>
+        <div className="text-4xl bold ml-4 text-green-700">Study Manager</div>
       </div>
     </div>
   );
