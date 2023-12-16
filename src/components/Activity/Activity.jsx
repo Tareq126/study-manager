@@ -8,7 +8,7 @@ const Activity = () => {
         <div className="my-info lg:flex items-center gap-4 mt-4 mx-2">
           <img
             className="w-24 h-24 rounded-full"
-            src="/public/Tareq-pro.jpg"
+            src="/src/images/Tareq-pro.jpg"
             alt=""
             srcset=""
           />

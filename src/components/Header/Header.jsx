@@ -8,7 +8,7 @@ const Header = () => {
         <div>
           <img
             className="w-24 h-16 ml-4 rounded"
-            src="/public/home.jpg"
+            src="/src/images/book-148200_640.png"
             alt=""
             srcset=""
           />
