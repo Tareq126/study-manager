@@ -39,10 +39,10 @@ const Activity = () => {
           </tbody>
         </table>
       </div>
-      {/* Personal info start */}
+      {/* Personal info end */}
 
       {/* Add a break */}
-      <div className="mt-12 mx-4">
+      <div className="mt-8 mx-4">
         <h1 className="text-3xl font-semibold text-black text-center mb-1">
           Add A Break
         </h1>
@@ -69,7 +69,7 @@ const Activity = () => {
 
       {/* Study Details */}
       <div className="mx-4">
-        <h1 className="text-3xl font-semibold text-black text-center mt-12">
+        <h1 className="text-3xl font-semibold text-black text-center mt-8">
           Study Details
           <div className="flex flex-col mt-2">
             <div className="grid h-20 card bg-base-300 rounded-box ">
@@ -91,7 +91,7 @@ const Activity = () => {
 
       {/* activity completed */}
       <div className="flex justify-center">
-        <button className="btn btn-success text-3xl font-semibold w-96 h-20 mt-10">
+        <button className="btn btn-success text-3xl font-semibold w-96 h-16 mt-10 mb-2">
           Activity Completed
         </button>
       </div>
