@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { ToastContainer, toast } from "react-toastify";
 
 const Activity = ({ time }) => {
   const [breakTime, setBreakTime] = useState(0);
@@ -6,6 +7,19 @@ const Activity = ({ time }) => {
     setBreakTime(breakTime);
   };
   console.log(breakTime);
+
+  const handleActivityCompleted = () => {
+    toast.success("Activity Completed!", {
+      position: "top-center",
+      autoClose: 2000,
+      hideProgressBar: true,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
+      theme: "light",
+    });
+  };
   return (
     <div>
       <div className="activity m-12 ">
@@ -95,7 +109,7 @@ const Activity = ({ time }) => {
             <div className="grid h-20 card bg-base-300 rounded-box ">
               <div className="flex justify-around items-center">
                 <div>Study time:</div>
-                <div>{time}H</div>
+                <div>{time} H</div>
               </div>
             </div>
             <div className="divider"></div>
@@ -111,7 +125,10 @@ const Activity = ({ time }) => {
 
       {/* activity completed */}
       <div className="flex justify-center">
-        <button className="btn btn-success text-3xl font-semibold w-96 h-16 mt-10 mb-2">
+        <button
+          onClick={() => handleActivityCompleted()}
+          className="btn btn-success text-3xl font-semibold w-96 h-16 mt-10 mb-2"
+        >
           Activity Completed
         </button>
       </div>
