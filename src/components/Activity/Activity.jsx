@@ -1,6 +1,11 @@
-import React from "react";
+import React, { useState } from "react";
 
-const Activity = () => {
+const Activity = ({ time }) => {
+  const [breakTime, setBreakTime] = useState(0);
+  const handleBreakTime = (breakTime) => {
+    setBreakTime(breakTime);
+  };
+  console.log(breakTime);
   return (
     <div>
       <div className="activity m-12 ">
@@ -48,19 +53,34 @@ const Activity = () => {
         </h1>
         <div className="grid h-20 card bg-base-300 rounded-box place-items-center">
           <div className="flex space-x-4">
-            <button className="btn btn-outline rounded-full btn-success">
+            <button
+              onClick={() => handleBreakTime(5)}
+              className="break-time btn btn-outline rounded-full btn-success"
+            >
               5 min
             </button>
-            <button className="btn btn-outline rounded-full btn-success">
+            <button
+              onClick={() => handleBreakTime(10)}
+              className="break-time btn btn-outline rounded-full btn-success"
+            >
               10 min
             </button>
-            <button className="btn btn-outline rounded-full btn-success">
+            <button
+              onClick={() => handleBreakTime(15)}
+              className="break-time btn btn-outline rounded-full btn-success"
+            >
               15 min
             </button>
-            <button className="btn btn-outline rounded-full btn-success">
+            <button
+              onClick={() => handleBreakTime(20)}
+              className="break-time btn btn-outline rounded-full btn-success"
+            >
               20 min
             </button>
-            <button className="btn btn-outline rounded-full btn-success">
+            <button
+              onClick={() => handleBreakTime(30)}
+              className="break-time btn btn-outline rounded-full btn-success"
+            >
               30 min
             </button>
           </div>
@@ -75,14 +95,14 @@ const Activity = () => {
             <div className="grid h-20 card bg-base-300 rounded-box ">
               <div className="flex justify-around items-center">
                 <div>Study time:</div>
-                <div>0</div>
+                <div>{time}H</div>
               </div>
             </div>
             <div className="divider"></div>
             <div className="grid h-20 card bg-base-300 rounded-box ">
               <div className="flex justify-around items-center">
                 <div>Break time:</div>
-                <div>0</div>
+                <div>{breakTime} Min</div>
               </div>
             </div>
           </div>

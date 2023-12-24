@@ -1,7 +1,7 @@
 import React from "react";
 import "./Book.css";
 
-const Book = ({ book }) => {
+const Book = ({ book, handleAddToList }) => {
   const { image, subject, time } = book;
   return (
     <div>
@@ -11,9 +11,14 @@ const Book = ({ book }) => {
         </figure>
         <div className="card-body items-center text-center">
           <h6 className="card-title">{subject}</h6>
-          <p>{time}</p>
+          <p>{time}H</p>
           <div className="card-actions">
-            <button className="btn btn-success">Add To List</button>
+            <button
+              onClick={() => handleAddToList(book.time)}
+              className="btn btn-success w-60"
+            >
+              Add To List
+            </button>
           </div>
         </div>
       </div>
