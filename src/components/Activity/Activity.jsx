@@ -22,7 +22,7 @@ const Activity = ({ time }) => {
   };
   return (
     <div>
-      <div className="activity m-12 ">
+      <div className="m-12 ">
         {/* Personal info start */}
         <div className="my-info lg:flex items-center gap-4 mt-4 mx-2">
           <img
