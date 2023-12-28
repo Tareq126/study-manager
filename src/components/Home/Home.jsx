@@ -30,7 +30,7 @@ const Home = () => {
             ))}
           </div>
         </div>
-        <div className="col-span-1">
+        <div>
           <Activity time={time}></Activity>
         </div>
       </div>

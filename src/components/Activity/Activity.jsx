@@ -6,7 +6,6 @@ const Activity = ({ time }) => {
   const handleBreakTime = (breakTime) => {
     setBreakTime(breakTime);
   };
-  console.log(breakTime);
 
   const handleActivityCompleted = () => {
     toast.success("Activity Completed!", {
@@ -21,7 +20,7 @@ const Activity = ({ time }) => {
     });
   };
   return (
-    <div>
+    <div className="text-center">
       <div className="m-12 ">
         {/* Personal info start */}
         <div className="my-info lg:flex items-center gap-4 mt-4 mx-2">
